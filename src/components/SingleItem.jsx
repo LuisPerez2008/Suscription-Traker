@@ -1,7 +1,7 @@
 import { moneyFormat } from "./moneyFormat";
 
 export const SingleItems = ({price, type ,id, eliminarItem, editarItem}) =>{
-    const urlImage =  `./src/images/${type}.png`
+    const urlImage =  `public/images/${type}.png`
 
     const HandleDelete = (e) =>{
         e.preventDefault();
