@@ -1,7 +1,7 @@
 import { moneyFormat } from "./moneyFormat";
 
 export const SingleItems = ({price, type ,id, eliminarItem, editarItem}) =>{
-    const urlImage =  `public/images/${type}.png`
+   
 
     const HandleDelete = (e) =>{
         e.preventDefault();
@@ -15,6 +15,8 @@ export const SingleItems = ({price, type ,id, eliminarItem, editarItem}) =>{
         e.preventDefault();
         editarItem(id);
     }
+
+     const urlImage =  `/${type}.png`
     
     return(
         <div className="grid grid-cols-3 px-6 items-center gap-5 bg-slate-200 max-w-[95%] min-w-[95%] mx-auto rounded-xl">
